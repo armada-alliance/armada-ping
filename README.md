@@ -32,5 +32,7 @@ crontab -e
 
 5. Add cronjob that executes the ping script
 ```bash
-*/5 * * * * /home/ubuntu/armada-ping/ping.sh | tee -a /home/ubuntu/mainnet-relay/armada-ping.log
+PATH=/home/ubuntu/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+
+* * * * * /home/ubuntu/armada-ping/ping.sh | tee -a /home/ubuntu/mainnet-relay/armada-ping.log
 ```

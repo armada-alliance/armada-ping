@@ -2,7 +2,7 @@
 
 # Armada Ping - Config
 # ======================
-ARMADA_TOKEN=
+ARMADA_TOKEN=74397184-0246-450a-916a-51dac53b9b59
 ARMADA_ENDPOINT=https://api.sublayer.io/armada-api/ping
 PROMETHEUS_JOB="prometheus"
 PROMETHEUS_ALIAS="block-producer-node"
