@@ -23,6 +23,10 @@ git clone https://github.com/armada-alliance/armada-ping.git
 ```
 ARMADA_TOKEN=<YOUR_TOKEN>
 ARMADA_ENDPOINT=https://api.sublayer.io/armada-api/ping
+PROMETHEUS_JOB="prometheus"
+PROMETHEUS_ALIAS="block-producer-node"
+PROMETHEUS_INSTANCE="localhost:12798"
+PROMETHEUS_TYPE="cardano-node"
 ```
 
 4. Edit crontab
