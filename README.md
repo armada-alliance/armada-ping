@@ -36,3 +36,14 @@ PATH=/home/ubuntu/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 * * * * * /home/ubuntu/armada-ping/ping.sh | tee -a /home/ubuntu/mainnet-relay/armada-ping.log
 ```
+
+6. Check the logs
+
+```bash
+cat /home/ubuntu/mainnet-relay/armada-ping.log
+```
+
+output:
+```
+Sun Jul 25 16:58:01 UTC 2021 { "node_version": "1.27.0", "slot_height": "35665977", "remaining_kes_periods": "44" }
+```
