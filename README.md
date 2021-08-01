@@ -51,3 +51,7 @@ output:
 ```
 Sun Jul 25 16:58:01 UTC 2021 { "node_version": "1.27.0", "slot_height": "35665977", "remaining_kes_periods": "44" }
 ```
+
+7. Check if your pool uptime is showing up
+
+Go to: https://armada-alliance.com/status
