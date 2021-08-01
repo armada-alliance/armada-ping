@@ -12,14 +12,14 @@ This way we can notify you when:
 
 ## Installation
 
-1. Clone repo
+### 1. Clone repo
 ```bash
 git clone https://github.com/armada-alliance/armada-ping.git
 ```
 
-2. Request token from one of the admins
+### 2. Request token from one of the admins
 
-3. Configure the script
+### 3. Configure the script
 ```
 ARMADA_TOKEN=<YOUR_TOKEN>
 ARMADA_ENDPOINT=https://api.sublayer.io/armada-api/ping
@@ -29,19 +29,19 @@ PROMETHEUS_INSTANCE="localhost:12798"
 PROMETHEUS_TYPE="cardano-node"
 ```
 
-4. Edit crontab
+### 4. Edit crontab
 ```bash
 crontab -e
 ```
 
-5. Add cronjob that executes the ping script
+### 5. Add cronjob that executes the ping script
 ```bash
 PATH=/home/ubuntu/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 * * * * * /home/ubuntu/armada-ping/ping.sh | tee -a /home/ubuntu/mainnet-relay/armada-ping.log
 ```
 
-6. Check the logs
+### 6. Check the logs
 
 ```bash
 cat /home/ubuntu/mainnet-relay/armada-ping.log
@@ -52,6 +52,6 @@ output:
 Sun Jul 25 16:58:01 UTC 2021 { "node_version": "1.27.0", "slot_height": "35665977", "remaining_kes_periods": "44" }
 ```
 
-7. Check if your pool uptime is showing up
+### 7. Check if your pool uptime is showing up
 
 Go to: https://armada-alliance.com/status
