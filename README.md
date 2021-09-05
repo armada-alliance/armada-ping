@@ -22,7 +22,7 @@ git clone https://github.com/armada-alliance/armada-ping.git
 ### 3. Configure the script
 ```
 ARMADA_TOKEN=<YOUR_TOKEN>
-ARMADA_ENDPOINT=https://api.sublayer.io/armada-api/ping
+ARMADA_ENDPOINT=https://api.armada-alliance.com/ping
 PROMETHEUS_JOB="prometheus"
 PROMETHEUS_ALIAS="block-producer-node"
 PROMETHEUS_INSTANCE="localhost:12798"
@@ -55,3 +55,5 @@ Sun Jul 25 16:58:01 UTC 2021 { "node_version": "1.27.0", "slot_height": "3566597
 ### 7. Check if your pool uptime is showing up
 
 Go to: https://armada-alliance.com/status
+
+or via API: https://api.armada-alliance.com/ping/pools?includeMetrics=true
